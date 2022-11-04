@@ -1,0 +1,30 @@
+1. Create a folder for your git repository and initialize the new git repository in that folder.
+
+mkdir homework4_11
+cd homework4_11
+git init
+
+2. Create a branch with your name and write a program in any programming language to print some message.
+
+>lesson.txt
+git add lesson.txt
+git commit -m "lesson 4.11"
+git branch minas
+git checkout minas
+>minas.js
+git add minas.js
+git comit -m "first commit"
+
+3. Add remote to your local repository.
+
+git remote add origin https://github.com/Minasjan/homework4.11.git
+
+4.Commit and push your branch to remote repository.
+
+git push -u origin master
+git push origin minas
+
+5. Create a tag for the last commit in your branch and push that tag to remote repository.
+
+git tag -a v1 HEAD -m "tag message"
+git push origin v1
